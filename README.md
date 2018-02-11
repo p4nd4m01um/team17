@@ -9,7 +9,7 @@
   
   This project aims to prevent the formation of ice or snow by using brine as the anti-icing agent. Utilising the humidity and temperature sensor to detect the environmental conditions, the sprinkler spreads the brine water which is controlled by Raspberry Pi. IR sensor is used to detect people and animals. When it detects people, the sprinkler turn off.  
 
-## The diagram of the anti-icing system  
+## The diagram of the Anti-Icing System  
 ![2e80396c-0860-46e9-b20f-047bef2133cd](https://user-images.githubusercontent.com/27271468/36057635-6a6f7434-0e08-11e8-8364-cc74c057d6f9.jpg)  
   
 ---  
