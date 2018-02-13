@@ -21,6 +21,6 @@ Ding Hao
 
 ## sensors
 IR sensor: HC-SR501 PIR Motion Detector  
-https://www.modmypi.com/image/cache/data/rpi-products/hacking-and-prototyping/sensors/pir-motion-sensor-800x609.jpg
+
   
   
