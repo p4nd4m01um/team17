@@ -21,6 +21,8 @@ Ding Hao
 
 ## sensors
 IR sensor: HC-SR501 PIR Motion Detector  
+![tech1552_b_large](https://user-images.githubusercontent.com/36344537/36178890-4e5ba800-1112-11e8-907d-1f80e61244a6.png)
 
+Humidity and temperature sensor: DHT11
   
   
