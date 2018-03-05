@@ -19,6 +19,8 @@ int main ()
     exit(1);
   pinMode(motor , OUTPUT);
   if ( Read_PIRsensor() )
-    digitalwrite(motor, LOW)
+    digitalwrite(motor, LOW);
+  else
+    digitalwrite(motor, HIGH);
 
 }
