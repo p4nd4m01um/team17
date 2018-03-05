@@ -1,15 +1,17 @@
-#include
-#include
-#include
-#include
+#include <wiringPi.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
 #define MAX_TIME 100
-#define DHT11PIN 7 //读取数据引脚
+#define DHT11PIN 7 //
 #define ATTEMPTS 5 //retry 5 times when no response
 int dht11_val[5]={0,0,0,0,0};
 int dht11_read_val(){
 uint8_t lststate=HIGH; //last state
 uint8_t counter=0;
 uint8_t j=0,i;
+  
 for(i=0;i<5;i++)
 dht11_val[i]=0;
 //host send start signal
