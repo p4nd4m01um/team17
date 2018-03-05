@@ -15,5 +15,10 @@ return a;
 
 int main ()
 {
+  if (wiringPiSetup()==-1)
+    exit(1);
+  pinMode(motor , OUTPUT);
+  if ( Read_PIRsensor() )
+    digitalwrite(motor, LOW)
 
 }
