@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define PIR		8
-#define motor 9
+#define PIR    8
+#define motor  10
 
 int Read_PIRsensor()
 {
@@ -13,14 +13,19 @@ a= digitalRead(PIR);
 return a;
 }
 
-int main ()
+int main (void)
 {
-  if (wiringPiSetup()==-1)
-    exit(1);
+  wiringPiSetup () ;
+  
   pinMode(motor , OUTPUT);
-  if ( Read_PIRsensor() )
-    digitalwrite(motor, LOW);
-  else
-    digitalwrite(motor, HIGH);
-
+  while(1)
+  {
+    if ( Read_PIRsensor() ){
+      digitalwrite(motor, LOW);
+    }
+    else{
+      digitalwrite(motor, HIGH);
+    }
+  }
+ return 0;
 }
