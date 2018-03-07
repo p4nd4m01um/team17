@@ -8,6 +8,7 @@
 
 int Read_PIRsensor()
 {
+int a;
 pinMode(PIR , INPUT);
 a= digitalRead(PIR);
 return a;
@@ -20,12 +21,17 @@ int main (void)
   pinMode(motor , OUTPUT);
   while(1)
   {
-    if ( Read_PIRsensor() ){
-      digitalwrite(motor, LOW);
+    int sensor;
+    sensor=Read_PIRsensor();
+    if ( sensor ){
+      digitalWrite(motor, LOW);
+
     }
     else{
-      digitalwrite(motor, HIGH);
-    }
+      digitalWrite(motor, HIGH);
+       }
+     delay(1000);
+    printf("%d \n",sensor); 
   }
  return 0;
 }
