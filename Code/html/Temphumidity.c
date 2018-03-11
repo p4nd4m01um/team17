@@ -35,30 +35,39 @@ int dht11_read_val()
 			delayMicroseconds(1);
 			if(counter==255)
      			{
+				printf("above the break");
      				break;
+				printf("+++++++++++++++++");
      			}
+		printf("in the while");
 
 		}
-
+		printf("ooooooooooooooooooooo");
 		lststate=digitalRead(DHT11PIN); //read current state and store as last state. 
-		if(counter==255) //if dht always high for 255 + 1 times, break this for circle
+		if(counter>=255) //if dht always high for 255 + 1 times, break this for circle
 		{
+			printf("above the second break");
 			break;
 		}
+		printf("between break and loop");
 
 		// top 3 transistions are ignored, maybe aim to wait for dht finish response signal
 		if((i>=4)&&(i%2==0))
 		{
 			dht11_val[j/8]<<=1; //write 1 bit to 0 by moving left (auto add 0)
-			if(counter>16) //long mean 1
-			dht11_val[j/8]|=1; //write 1 bit to 1 
+			if(counter>16) {
+				printf("222222222222");//long mean 1
+				dht11_val[j/8]|=1; //write 1 bit to 1 
+			}
 			j++;
+			printf("in the if loop");
 		}
 	}
 
 	// verify checksum and print the verified data
 	if((j>=40)&&(dht11_val[4]==((dht11_val[0]+dht11_val[1]+dht11_val[2]+dht11_val[3])& 0xFF)))
 	{
+		printf("in the if loop 2");
 		float f, h;
 		h = dht11_val[0] * 256 + dht11_val[1];
 		h /= 10;
@@ -75,18 +84,22 @@ int dht11_read_val()
 
 }
 	int main(void)
-	{
+	{	
+		dht11_read_val();
+		printf("this is c+++");
 		//int attempts=ATTEMPTS;
 		if(wiringPiSetup()==-1)
 		{
 			exit(1);
   		}
-
- 		 while(1)
-		{
-			dht11_read_val();
-    			delay(1000);
-  		}
+	//	else{
+		//printf("this is c++2");
+ 			//while(1){
+			//delay(5000);
+		//dht11_read_val();
+    		//	delay(1000);
+  			//}
+	//	}
 //while(attempts){ //you have 5 times to retry
 //int success = dht11_read_val(); //get result including printing out
 //if (success) { //if get result, quit program; if not, retry 5 times then quit
