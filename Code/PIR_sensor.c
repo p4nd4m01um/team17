@@ -3,18 +3,25 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define PIR    8
-#define motor  10
+#define PIR    7
+#define motor  0
 
 int Read_PIRsensor()
 {
+  sleep(2);                    //to stablize the sensor
 int a;
 pinMode(PIR , INPUT);
 a= digitalRead(PIR);
+  if (a=1)
+    printf("motion detected \n");
+  else
+    printf("nothing detected \n");
+  sleep (5);
 return a;
 }
 
-int main (void)
+
+int main ()
 {
   wiringPiSetup () ;
   
@@ -25,7 +32,6 @@ int main (void)
     sensor=Read_PIRsensor();
     if ( sensor ){
       digitalWrite(motor, LOW);
-
     }
     else{
       digitalWrite(motor, HIGH);
