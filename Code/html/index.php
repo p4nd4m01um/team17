@@ -1,41 +1,27 @@
-#<?php
-//	phpinfo();
-//	get_loaded_extensions();
-//	$cmd = shell_exec('/home/pi/team17/Code/sensor_data_test/.thread_t');
-	exec('/home/pi/team17/Code/sensor_data_test/.thread_t');
-	ini_set("display_errors","on");
-	error_reporting(E_ALL);
-	$mysqli = new mysqli("localhost", "pi", "", "sensor");
-	$interval=3;
-	echo" DATA:<br>";
-//	$buffer = ini_get('output_buffering');
-	ob_end_flush();
-	do{
-		$sql = "SELECT * FROM THS";
-		$result = $mysqli->query($sql);
-		$row = $result->fetch_assoc();
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
 
-		echo "Temperatur degree:\n";
-		echo $row["value"];
-		echo "<br>";
-		echo "Humidity degree:\n";
-		echo $row["value2"];
-		echo "<br>";
-		echo "<br>";
-	//	ob_clean();
-		//ob_flush();
-		//ob_flush();
-		//ob_clean();
-		//ob_start();
-		//echo"<script language=JavaScript> location.reload();</script>";		
-		sleep($interval);
-		//ob_clean();
-		flush();
-		//ob_end_flush();
-	}while(true);
+			setInterval(function(){
 
-//	$con = mysqli_connect("localhost", "pi", "", "sensor");
+				$("#th_data").load("th.php");
 
-//	echo "this";
+			},500);
 
- ?>
+		});
+
+
+	</script>
+	</head>
+
+	<body>
+	<div id="th_data">
+
+	</div>
+	<button> START </button>
+	</body>
+</html>

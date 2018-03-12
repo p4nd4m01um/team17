@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <unistd.h>
 
 #define PIR   0
-#define motor  2
+#define motor 3
 
 int Read_PIRsensor()
 {
@@ -12,11 +13,11 @@ int Read_PIRsensor()
 int a;
 pinMode(PIR , INPUT);
 a= digitalRead(PIR);
-  if (a=1)
+  if (a==1)
     printf("motion detected \n");
   else
     printf("nothing detected \n");
-  sleep (5);
+ // sleep (1);
 return a;
 }
 
@@ -31,13 +32,13 @@ int main ()
     int sensor;
     sensor=Read_PIRsensor();
     if ( sensor ){
-      digitalWrite(motor, LOW);
+      digitalWrite(motor, HIGH);
     }
     else{
-      digitalWrite(motor, HIGH);
+      digitalWrite(motor,LOW);
        }
-     delay(1000);
-    printf("%d \n",sensor); 
+   // printf("%d \n",sensor);
+   // delay(1000); 
   }
  return 0;
 }

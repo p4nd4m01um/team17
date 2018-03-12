@@ -1,18 +1,12 @@
-#include<wiringPi.h>
-#include<stdio.h>
-#include<stdlib.h>
-#include<stdint.h>
+#include "ths.h"
 
-#define MAX_TIME 100
-#define DHT11PIN 7 //读取数据引脚
-#define ATTEMPTS 5 //retry 5 times when no response
-int dht11_val[5] = {0,0,0,0,0};
 
-int dht11_read_val()
+int dht11_read_val(int dht11_val[], float dht22[])
 {
 	uint8_t lststate=HIGH; //last state
 	uint8_t counter=0;
 	uint8_t j=0,i;
+	float *result[2];
 
 	for(i=0;i<5;i++){
 		dht11_val[i] = 0;
@@ -60,12 +54,17 @@ int dht11_read_val()
 	if((j>=40)&&(dht11_val[4]==((dht11_val[0]+dht11_val[1]+dht11_val[2]+dht11_val[3])& 0xFF)))
 	{
 		float f, h;
+
 		h = dht11_val[0] * 256 + dht11_val[1];
 		h /= 10;
 		f = (dht11_val[2] & 0x7F)* 256 + dht11_val[3];
 		f /= 10.0;
 		if (dht11_val[2] & 0x80) f *= -1;
 		printf("Temp = %.1f *C, Hum = %.1f \%\n", f, h);
+	
+		dht22[0] = f;
+		dht22[1] = h;
+
 		return 1;
 	}
 	else
@@ -74,27 +73,3 @@ int dht11_read_val()
 	}
 
 }
-	int main(void)
-	{
-		//int attempts=ATTEMPTS;
-		if(wiringPiSetup()==-1)
-		{
-			exit(1);
-  		}
-
- 		 while(1)
-		{
-			dht11_read_val();
-    			delay(1000);
-  		}
-//while(attempts){ //you have 5 times to retry
-//int success = dht11_read_val(); //get result including printing out
-//if (success) { //if get result, quit program; if not, retry 5 times then quit
-//break;
-//}
-//attempts--;
-//delay(3000);
-	
-
-		return 0;
-	}
