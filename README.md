@@ -26,6 +26,10 @@ IR sensor: HC-SR501 PIR Motion Detector
 Humidity and temperature sensor: DHT22  
 ![04_46_large](https://user-images.githubusercontent.com/36344537/37292286-8636f486-2608-11e8-85ff-8439183cb009.jpg)  
   
+  
+## How to connect the GPIO
+-For PIR sensor: ground to Pin 6, VCC to Pin 2, signal to Pin7.  
+-For Humidity & Temperature sensor: ground to Pin 6, VCC to Pin2, signal to Pin 11.
 
   
 ## How to implement code  
