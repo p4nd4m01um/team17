@@ -28,8 +28,8 @@ Humidity and temperature sensor: DHT22
   
   
 ## How to connect the GPIO
--For PIR sensor: ground to Pin 6, VCC to Pin 2, signal to Pin7.  
--For Humidity & Temperature sensor: ground to Pin 6, VCC to Pin2, signal to Pin 11.
+- For PIR sensor: ground to Pin 6, VCC to Pin 2, signal to Pin7.  
+- For Humidity & Temperature sensor: ground to Pin 6, VCC to Pin2, signal to Pin 11.
 
   
 ## How to implement code  
