@@ -25,5 +25,5 @@ IR sensor: HC-SR501 PIR Motion Detector
 
 Humidity and temperature sensor: DHT11  
 ![61yp8hxh ul _sx342_](https://user-images.githubusercontent.com/36344537/36179025-b56d20aa-1112-11e8-8f23-ac8ac2bf001b.jpg)
-  
+ https://www.sainsmart.com/products/dht22-am2302-digital-temperature-humidity-measurement-sensor
   
