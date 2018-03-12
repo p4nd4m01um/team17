@@ -65,7 +65,7 @@ int dht11_read_val()
 		f = (dht11_val[2] & 0x7F)* 256 + dht11_val[3];
 		f /= 10.0;
 		if (dht11_val[2] & 0x80) f *= -1;
-		printf("Temp = %.1f *C, Hum = %.1f \%\n", f, h);
+		printf("Temp = %.1f *C, Hum = %.1f % \n", f, h);
 		return 1;
 	}
 	else
