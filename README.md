@@ -23,7 +23,12 @@ Ding Hao
 IR sensor: HC-SR501 PIR Motion Detector  
 ![tech1552_b_large](https://user-images.githubusercontent.com/36344537/36178890-4e5ba800-1112-11e8-907d-1f80e61244a6.png)
 
-Humidity and temperature sensor: DHT11  
-![61yp8hxh ul _sx342_](https://user-images.githubusercontent.com/36344537/36179025-b56d20aa-1112-11e8-8f23-ac8ac2bf001b.jpg)
- https://www.sainsmart.com/products/dht22-am2302-digital-temperature-humidity-measurement-sensor
+Humidity and temperature sensor: DHT22  
+![04_46_large](https://user-images.githubusercontent.com/36344537/37292286-8636f486-2608-11e8-85ff-8439183cb009.jpg)  
   
+
+  
+## How to implement code  
+1. using 'git clone' to download our repository
+2. cd Code/sensor_data_test/
+3. compile the 'tread_t.cpp' by using the commond ''' g++ MyDB.cpp thread_t.cpp ths.o -o thread_t -lwiringPi 'mysql_config --cflags --libs' '''
