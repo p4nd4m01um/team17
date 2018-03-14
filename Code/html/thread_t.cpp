@@ -25,30 +25,18 @@ void search(){
 
 float calculator(float temp, float humd){
 
-	float eq1, eq1_1, eq2, c_humd, result;
+	float r_humd, result;
 
-	cout<<"input temp :"<<temp<<endl;
-	cout<<"input humd :"<<humd<<endl;
+	cout<<"input temp is :"<<temp<<endl;
+	cout<<"input humd is :"<<humd<<endl;
 
-	eq1 = (-17.27*temp)/(temp +238.3);
-	eq1_1 = exp(eq1);
-	eq2 = (10.5 - temp);
+	r_humd = 9.5 * exp((-17.27*temp)/(temp + 238.3))*(10.5 - temp);
+
+	cout<< "r_humd is :"<< r_humd <<endl;
+
+	result = r_humd/humd;
 
 
-	c_humd = 9.5 * eq1_1 * eq2 *0.01;
-
-	cout<< "c_humd is :"<< c_humd <<endl;
-
-	result = c_humd/humd;
-
-	if (result >= 1){
-		cout<< "it will snow" <<endl;
-	}
-	else{
-		cout<< "Probability for any precipitation to be snow is about "<< result*10 <<endl;
-	}
-
-	result = result*100;
 	return result;
 }
 
@@ -57,6 +45,7 @@ void data_store(){
 
 	float variable, variable2, dht22[2];
         int dht_11_val[5];
+	float pop;
         string value;
 	MyDB db;// initiate data obj 
         db.initDB("localhost","pi","","sensor");
@@ -69,6 +58,22 @@ void data_store(){
                 variable2 = dht22[1];
                 value = "UPDATE THS SET value='" + to_string(variable) + "',value2='" + to_string(variable2) + "' WHERE name='t&h';";
                 db.exeSQL(value);
+
+		//call caculator to measure the probability;
+		pop = calculator(variable, variable2);
+
+		if (pop >= 0.99){
+                	cout<< "it will snow: it is " <<endl;
+			digitalWrite(motor, HIGH);
+			cout<<"motor on"<<endl;
+        	}
+        	else if (pop <= 0){
+                	cout<< "it will snow in hell before it does here"<<endl;
+        	}
+        	else{
+                	cout<< "Probability for any precipitation to be snow is about "<< pop*100<<"%"<<endl;
+        	}
+
         }
 }
 
