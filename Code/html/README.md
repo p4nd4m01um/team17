@@ -1,6 +1,6 @@
 ## Sensors  
 ### Humidity and Temperature sensor:   
-we choose DHT22 with one signal output.  
+we have chosen DHT22(AM2302, the only difference is its wired) with one signal output.  
 - Low cost  
 - 3 to 5V power and I/O  
 - 2.5mA max current use during conversion (while requesting data)  
@@ -8,11 +8,11 @@ we choose DHT22 with one signal output.
 - Good for -40 to 80°C temperature readings ±0.5°C accuracy  
 - No more than 0.5 Hz sampling rate (once every 2 seconds)  
 
-- Single-bus data is used for communication between MCU and DHT22, it costs 5mS for single time
+- Single-bus data is used for communication between RPi and DHT22, it costs 5mS for single time
 communication.  
 
 ### PIR sensor:
-we choosed HC-SR501.
+we have chosen HC-SR501.
 
 - Voltage: 5V – 20V  
 - Power Consumption: 65mA  
@@ -20,7 +20,7 @@ we choosed HC-SR501.
 - Lock time: 0.2 sec  
 - Trigger methods: L – disable repeat trigger, H enable repeat trigger  
 - Sensing range: less than 120 degree, within 7 meters  
-- Temperature: – 15 ~ +70  
+- Temperature: – 15 ~ +70 celsius
 - Dimension: 32*24 mm, distance between screw 28mm, M2, Lens dimension in diameter: 23mm  
 
 ## Test Code  
@@ -29,7 +29,7 @@ we choosed HC-SR501.
 - the code for testing Hc-Sr501 was named as PIR_sensor.c
 
 ## Class  
-we writed a class for using sensors.
+we have written a class for using sensors.
 
 ## Website  
 we used PHP for creating a website and MySQL to store the data that comes from the sensors.
