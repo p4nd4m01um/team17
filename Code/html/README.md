@@ -37,6 +37,6 @@ we used PHP for creating a website and MySQL to store the data that comes from t
 ## How to implement
 - Git clone
 - cd the the Code folder
-- compile the thread_t 
+- compile the 'tread_t.cpp' by using the commond ``` g++ MyDB.cpp thread_t.cpp ths.o -o thread_t -lwiringPi 'mysql_config --cflags --libs' ```   
 - operating
 
