@@ -35,4 +35,6 @@ Humidity and temperature sensor: DHT22
 ## How to implement code  
 1.  using 'git clone' to download our repository
 2.  cd Code/sensor_data_test/
-3.  compile the 'tread_t.cpp' by using the commond ```g++ MyDB.cpp thread_t.cpp ths.o -o thread_t -lwiringPi 'mysql_config --cflags --libs' ```
+3.  compile the 'tread_t.cpp' by using the commond ```g++ MyDB.cpp thread_t.cpp ths.o -o thread_t -lwiringPi 'mysql_config --cflags --libs' ```  
+
+### details are shown in the wiki
