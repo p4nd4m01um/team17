@@ -27,7 +27,7 @@ we choosed HC-SR501.
 ### PIR sensor  
 connect ground to Header 6  
 Vcc to Header 2  
-signal to Header 11
+signal to Header 11  
 LED to Header 13  
   
 ### Humidity&temperature sensor  
