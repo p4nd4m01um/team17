@@ -23,6 +23,18 @@ we choosed HC-SR501.
 - Temperature: – 15 ~ +70  
 - Dimension: 32*24 mm, distance between screw 28mm, M2, Lens dimension in diameter: 23mm  
 
+## connection:  
+### PIR sensor  
+connect ground to Header 6  
+Vcc to Header 2  
+signal to Header 11
+LED to Header 13  
+  
+### Humidity&temperature sensor  
+connect ground to Header 6  
+Vcc to Header 4  
+signal to Header 7 
+
 ## Test Code  
 
 - the code for testing DHT22 was named as humidityandtemp.c
