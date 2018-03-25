@@ -6,7 +6,11 @@
    this file named as ``` art_parm.txt ``` .
     
   ### PCB NC  
-   Named as ``` nc_param.txt ```
+   Named as ``` nc_param.txt ```.  
+     
+  ### IPC2581  
+  IPC-2581 is a generic standard for printed circuit board and assembly manufacturing description data and transfer methodology.  
+  This file named as ``` ipc2581.txt```.
   
     
   ### Pdf files of PCB  
@@ -15,5 +19,5 @@
     
   ### Schematic  
   the circuit is shown in the file named ``` sensors.opj ```
-  It can be opened by ``` Orcad Capture ```
+  It can be opened by ``` Orcad Capture ```.
   
