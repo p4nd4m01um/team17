@@ -27,9 +27,8 @@ Humidity and temperature sensor: DHT22
 ![04_46_large](https://user-images.githubusercontent.com/36344537/37292286-8636f486-2608-11e8-85ff-8439183cb009.jpg)  
   
   
-## How to connect the GPIO
-- For PIR sensor: ground to Pin 6, VCC to Pin 2, signal to Pin7.  
-- For Humidity & Temperature sensor: ground to Pin 6, VCC to Pin2, signal to Pin 11.
+## Connection and testing sensors  
+[a link](https://github.com/p4nd4m01um/team17/blob/master/Test%20sensors/README.md)  
 
   
 ## How to implement code  
