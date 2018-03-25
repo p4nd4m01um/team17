@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -lpthread -lwiringPi   CMakeFiles/main.dir/main.cpp.o  -o main -rdynamic -L/usr/lib/arm-linux-gnueabihf  -lmariadbclient -lpthread -lz -lm -ldl MySql/libmysql.a Sensor/libsensor.a 
