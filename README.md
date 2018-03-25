@@ -36,9 +36,10 @@ Humidity and temperature sensor: DHT22
 
   
 ## How to implement code  
-1.  Clone the repository.
-2.  Copy the Code/html to /var/www/html
-3.  In the Code folder, the main file can be executed.
-4.  If you changed the input/output pin number, you can use CMake to rebuild the main file.
+1. Clone the repository.
+2. Copy the Code/html to /var/www/html
+3. In the Code folder, the main file can be executed.
+4. If you changed the input/output pin number, you can use CMake to rebuild the main file.
+5. Open browser enter the IP of raspberryPi to access the user interface. 
 
 ### details are shown in the wiki
