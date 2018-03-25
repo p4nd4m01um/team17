@@ -23,3 +23,6 @@
   
 ## Top layer  
 [newtop1.pdf](https://github.com/p4nd4m01um/team17/files/1845896/newtop1.pdf)
+
+## Bottom layer  
+[newbottom1.pdf](https://github.com/p4nd4m01um/team17/files/1845897/newbottom1.pdf)  
