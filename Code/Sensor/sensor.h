@@ -6,15 +6,17 @@
 class sensor {
 	private:
 		int ir, data_tempHumSensor[5];
-		float data_temp, data_hum;
+		float data_temp, data_hum, data_reHum, data_snowPro;
 
 	public:
 
 		void readIrSensor();
 		void readTempHumSensor();
-
-		int getTemp();
-		int getHum();
+		void snowCal();
+		float getTemp();
+		float getHum();
+		float getSnowPro();
+		float getReHum();
 
 
 

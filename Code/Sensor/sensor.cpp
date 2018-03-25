@@ -2,6 +2,7 @@
 #include<wiringPi.h>
 #include<unistd.h>
 #include"sensor.h"
+#include<cmath>
 
 #define PIR   0
 #define motor 3
@@ -96,7 +97,7 @@ void sensor::readTempHumSensor(){
 			if (this->data_tempHumSensor[2] & 0x80){
 				this->data_temp *= -1;
 			}
-			cout<< this->data_temp<<"========="<< this->data_hum<<endl;
+			cout<<"Temperature :"<< this->data_temp<<" Humidity : "<< this->data_hum<<endl;
 			sleep(3);
 
 
@@ -105,14 +106,34 @@ void sensor::readTempHumSensor(){
 	}
 }
 
+void sensor::snowCal(){
+
+	this->data_reHum = 9.5 * exp((-17.27*this->data_temp)/(this->data_temp + 238.3))*(10.5 - this->data_temp);
+	this->data_snowPro = this->data_reHum/this->data_hum;
+	if (this->data_snowPro >= 1){
+		cout<<"it will snow"<<endl;
+		digitalWrite(motor, HIGH);
+	}
+	cout<<this->data_snowPro<<endl;
+}
 
 
-int sensor::getTemp(){
+float sensor::getTemp(){
 
 	return this->data_temp;
 }
 
-int sensor::getHum(){
+float sensor::getHum(){
 
 	return this->data_hum;
+}
+
+float sensor::getSnowPro(){
+
+	return this->data_snowPro;
+}
+
+float sensor::getReHum(){
+
+	return this->data_reHum;
 }

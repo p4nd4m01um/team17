@@ -1,17 +1,16 @@
 <?php
 	$mysqli = mysqli_connect("localhost", "pi", "", "sensor");
-	$interval=3;
-	echo" DATA:<br>";
-	$sql = "SELECT * FROM THS";
-	$result = $mysqli->query($sql);
-	$row = $result->fetch_assoc();
+        $interval = 3;
+        $sql = "SELECT * FROM THS";
+        $result = $mysqli->query($sql);
+        $row = $result->fetch_assoc();
 
-	echo "Temperatur degree:\n";
+	echo "TEMPERATURE :";
 	echo $row["value"];
+	echo "°C";
 	echo "<br>";
-	echo "Humidity degree:\n";
+	echo "HUMIDITY :";
 	echo $row["value2"];
+	echo "%";
 	echo "<br>";
-	echo "<br>";
- ?>
-
+?>

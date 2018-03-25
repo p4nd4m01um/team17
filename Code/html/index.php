@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-
-			setInterval(function(){
-
-				$("#th_data").load("th.php");
-
-			},500);
-
-		});
-
-
-	</script>
+        <head>
+                <meta charset="UTF-8">
+                <script src="JS/jquery.min.js"></script>
+		<script src="JS/vue.min.js"></script>
+                <link rel="stylesheet" type="text/css" media="all" href="CSS/font.css">
 	</head>
 
-	<body>
-	<div id="th_data">
+	<script>
+                $(document).ready(function(){
 
+                        setInterval(function(){
+
+                                $("#data").load("th.php");
+
+                        },1000);
+
+                });
+
+
+        </script>
+
+	<div id="digital">
+		<p class="data">
+			<h1><div id="data"></div></h1>
+		</p>
 	</div>
-	<button> START </button>
-	</body>
+
+
+
+
+        <div id="clock">
+         <p class="date">{{ date }}</p>
+         <p class="time">{{ time }}</p>
+        </div>
+	<script src="JS/clock.js"></script>
+
+        </body>
 </html>
+
+
+
+
