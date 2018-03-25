@@ -29,6 +29,10 @@ Humidity and temperature sensor: DHT22
   
 ## Connection and testing sensors  
 [Connection and testing sensors](https://github.com/p4nd4m01um/team17/blob/master/Test%20sensors/README.md)  
+  
+  
+## PCB Design
+[details of the PCB](https://github.com/p4nd4m01um/team17/blob/master/PCB/README.md)
 
   
 ## How to implement code  
