@@ -21,3 +21,5 @@
   the circuit is shown in the file named ``` sensors.opj ```
   It can be opened by ``` Orcad Capture ```.
   
+## Top layer  
+[newtop1.pdf](https://github.com/p4nd4m01um/team17/files/1845896/newtop1.pdf)
