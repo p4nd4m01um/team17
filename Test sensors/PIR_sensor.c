@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define PIR    8
-#define motor  10
+#define PIR    0
+#define motor  3
 
 int Read_PIRsensor()
 {
