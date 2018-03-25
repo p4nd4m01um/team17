@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/team17/Code/MySql/MyDB.cpp
+iostream
+-
+string
+-
+MyDB.h
+/home/pi/team17/Code/MySql/MyDB.h
+
+/home/pi/team17/Code/MySql/MyDB.h
+iostream
+-
+string
+-
+mysql/mysql.h
+-
+

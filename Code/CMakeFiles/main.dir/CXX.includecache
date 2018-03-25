@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/team17/Code/MySql/MyDB.h
+iostream
+-
+string
+-
+mysql/mysql.h
+-
+
+/home/pi/team17/Code/Sensor/sensor.h
+
+/home/pi/team17/Code/main.cpp
+iostream
+-
+MySql/MyDB.h
+/home/pi/team17/Code/MySql/MyDB.h
+Sensor/sensor.h
+/home/pi/team17/Code/Sensor/sensor.h
+wiringPi.h
+-
+thread
+-
+cmath
+-
+string
+-
+unistd.h
+-
+

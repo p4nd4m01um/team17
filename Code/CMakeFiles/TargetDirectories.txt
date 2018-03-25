@@ -1,0 +1,9 @@
+/home/pi/team17/Code/CMakeFiles/rebuild_cache.dir
+/home/pi/team17/Code/CMakeFiles/edit_cache.dir
+/home/pi/team17/Code/CMakeFiles/main.dir
+/home/pi/team17/Code/Sensor/CMakeFiles/rebuild_cache.dir
+/home/pi/team17/Code/Sensor/CMakeFiles/edit_cache.dir
+/home/pi/team17/Code/Sensor/CMakeFiles/sensor.dir
+/home/pi/team17/Code/MySql/CMakeFiles/rebuild_cache.dir
+/home/pi/team17/Code/MySql/CMakeFiles/edit_cache.dir
+/home/pi/team17/Code/MySql/CMakeFiles/mysql.dir
