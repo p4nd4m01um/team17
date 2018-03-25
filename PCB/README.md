@@ -6,11 +6,14 @@
    this file named as ``` art_parm.txt ``` .
     
   ### PCB NC  
-    Named as ``` nc_param.txt ```
+   Named as ``` nc_param.txt ```
   
     
-  ### pdf files of PCB  
-    This PCB has two layers, therefore we need two pdf files.  
-    these files named as ``` newtop1.pdf ``` and ``` nwebotom1.pdf ```
+  ### Pdf files of PCB  
+   This PCB has two layers, therefore we need two pdf files.  
+   these files named as ``` newtop1.pdf ``` and ``` nwebotom1.pdf ```
     
-  ### schematic
+  ### Schematic  
+  the circuit is shown in the file named ``` sensors.opj ```
+  It can be opened by ``` Orcad Capture ```
+  
