@@ -21,7 +21,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 
 ## Components
 
-1.**_IR sensor: HC-SR501 PIR Motion Detector_**  
+**1. _IR sensor: HC-SR501 PIR Motion Detector_**  
 - Voltage: 5V – 20V  
 - Power Consumption: 65mA  
 - TTL output: 3.3V, 0V  
@@ -36,7 +36,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 </p>
 
 
-2. **_Humidity and temperature sensor: DHT22_**
+**2. _Humidity and temperature sensor: DHT22_**
 - Low cost  
 - 3 to 5V power and I/O  
 - 2.5mA max current use during conversion (while requesting data)  
@@ -55,10 +55,22 @@ communication.  
 2. Copy the Code/html to /var/www/html
 3. In the Code folder, the main file can be executed.
 4. If you changed the input/output pin number, you can use CMake to rebuild the main file.
-5. Open browser enter the IP of raspberryPi to access the user interface. 
+5. Open browser enter the address of raspberryPi to access the user interface. 
 
-## Contributors:  
-Revanth Kailashnath  
-Cao Jinyu  
-Ding Hao 
+## Contributors and Progress
+- [x] Code of Temperature & Humidity sensor (Hao Ding)
+- [x] Code of IR sensor (Hao Ding)
+- [X] Code of Snow calculation (Hao Ding)
+- [X] Code of MySql connection (Hao Ding)
+- [X] Building MySql database (Hao Ding)
+- [X] Building Web server (Hao Ding)
+- [X] Php code for data connection (Hao Ding)
+- [X] User interface design (Hao Ding)
+- [X] Applying domain name for public accessible (Hao Ding)
+- [ ] Open a pull request (Hao Ding)
+
+- [ ] PCB design (Revanth Kailashnath and Jinyu Cao)
+- [ ] Unit test （Jinyu Cao)
+
+## More detail in WIKI
 
