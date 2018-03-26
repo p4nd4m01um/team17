@@ -67,6 +67,7 @@ communication.  
 - [X] Php code for data connection (Hao Ding)
 - [X] User interface design (Hao Ding)
 - [X] Applying domain name for public accessible (Hao Ding)
+- [X] WIKI ((Revanth Kailashnath, Jinyu Cao and Hao Ding)
 - [ ] Pump implementation
 - [ ] PCB design (Revanth Kailashnath and Jinyu Cao)
 - [ ] Unit test （Jinyu Cao)
