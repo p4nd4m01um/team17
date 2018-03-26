@@ -25,7 +25,7 @@ IR sensor: HC-SR501 PIR Motion Detector
 
 
 Humidity and temperature sensor: DHT22  
-<img src="https://user-images.githubusercontent.com/36344537/37292286-8636f486-2608-11e8-85ff-8439183cb009.jpg" />
+<img src="https://user-images.githubusercontent.com/36344537/37292286-8636f486-2608-11e8-85ff-8439183cb009.jpg" width="200px" height="200px" />  
  
   
   
