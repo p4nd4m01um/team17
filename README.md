@@ -16,14 +16,12 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 ## Flow Diagram
 <p align="center">
 <img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/Flow%20chart.jpg" width="800px" height="350px" /> 
+  
+***
 
 ## Components
-1._IR sensor: HC-SR501 PIR Motion Detector_
 
-<p align="center">
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-HC-SR501.png" width="600px" height="200px" />
-</p>
-                                                                                                                 
+1.**_IR sensor: HC-SR501 PIR Motion Detector_**  
 - Voltage: 5V – 20V  
 - Power Consumption: 65mA  
 - TTL output: 3.3V, 0V  
@@ -33,13 +31,12 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 - Temperature: – 15 ~ +70  
 - Dimension: 32*24 mm, distance between screw 28mm, M2, Lens dimension in diameter: 23mm
 
-
-2. _Humidity and temperature sensor: DHT22_
-
 <p align="center">
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-DHT22.png" width="600px" height="200px" />
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-HC-SR501.png" width="600px" height="200px" />
 </p>
-   
+
+
+2. **_Humidity and temperature sensor: DHT22_**
 - Low cost  
 - 3 to 5V power and I/O  
 - 2.5mA max current use during conversion (while requesting data)  
@@ -47,7 +44,11 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 - Good for -40 to 80°C temperature readings ±0.5°C accuracy  
 - No more than 0.5 Hz sampling rate (once every 2 seconds)  
 - Single-bus data is used for communication between MCU and DHT22, it costs 5mS for single time
-communication.  
+communication.  
+
+<p align="center">
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-DHT22.png" width="700px" height="200px" />
+</p>
 
 ## How to implement code  
 1. Clone the repository.
