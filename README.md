@@ -20,12 +20,30 @@ Cao Jinyu
 Ding Hao  
 
 ## Sensors
-IR sensor: HC-SR501 PIR Motion Detector  
-<img src="https://user-images.githubusercontent.com/36344537/36178890-4e5ba800-1112-11e8-907d-1f80e61244a6.png" width="300px" height="300px" />
+### IR sensor: HC-SR501 PIR Motion Detector  
+<img src="https://user-images.githubusercontent.com/36344537/36178890-4e5ba800-1112-11e8-907d-1f80e61244a6.png" width="300px" height="300px" />  
+
+- Voltage: 5V – 20V  
+- Power Consumption: 65mA  
+- TTL output: 3.3V, 0V  
+- Lock time: 0.2 sec  
+- Trigger methods: L – disable repeat trigger, H enable repeat trigger  
+- Sensing range: less than 120 degree, within 7 meters  
+- Temperature: – 15 ~ +70  
+- Dimension: 32*24 mm, distance between screw 28mm, M2, Lens dimension in diameter: 23mm
 
 
-Humidity and temperature sensor: DHT22  
+### Humidity and temperature sensor: DHT22  
 <img src="https://user-images.githubusercontent.com/36344537/37292286-8636f486-2608-11e8-85ff-8439183cb009.jpg" width="200px" height="200px" />  
+   
+- Low cost  
+- 3 to 5V power and I/O  
+- 2.5mA max current use during conversion (while requesting data)  
+- Good for 0-100% humidity readings with 2-5% accuracy  
+- Good for -40 to 80°C temperature readings ±0.5°C accuracy  
+- No more than 0.5 Hz sampling rate (once every 2 seconds)  
+- Single-bus data is used for communication between MCU and DHT22, it costs 5mS for single time
+communication.  
  
   
   
