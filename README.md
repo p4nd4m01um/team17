@@ -12,6 +12,8 @@
 ## The diagram of the Anti-Icing System  
 ![2e80396c-0860-46e9-b20f-047bef2133cd](https://user-images.githubusercontent.com/27271468/36057635-6a6f7434-0e08-11e8-8364-cc74c057d6f9.jpg)  
   
+![](https://github.com/p4nd4m01um/team17/blob/master/rtep%20detailed%20flow%20chart(1).jpg)
+  
 ---  
 
 ## Contributors:  
