@@ -10,18 +10,18 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 
 ## Setup
 <p align="center">
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/Setup_diagram.png" width="800px" height="450px/> 
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/Setup_diagram.png" width="800px" height="450px" /> 
 </p>
 
 ## Flow Diagram
 <p align="center">
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/Flow%20chart.jpg" width="800px" height="350px/> 
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/Flow%20chart.jpg" width="800px" height="350px" /> 
 
 ## Components
 1._IR sensor: HC-SR501 PIR Motion Detector_
 
 <p align="center">
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-HC-SR501.png" width="600px" height="200px />
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-HC-SR501.png" width="600px" height="200px" />
 </p>
                                                                                                                  
 - Voltage: 5V – 20V  
@@ -37,7 +37,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 2. _Humidity and temperature sensor: DHT22_
 
 <p align="center">
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-DHT22.png" width="600px" height="200px />
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-DHT22.png" width="600px" height="200px" />
 </p>
    
 - Low cost  
