@@ -57,7 +57,7 @@ communication.  
 4. If you changed the input/output pin number, you can use CMake to rebuild the main file.
 5. Open browser enter the address of raspberryPi to access the user interface. 
 
-## Contributors and Progress
+## Contributes and Progress
 - [x] Code of Temperature & Humidity sensor (Hao Ding)
 - [x] Code of IR sensor (Hao Ding)
 - [X] Code of Snow calculation (Hao Ding)
@@ -67,10 +67,9 @@ communication.  
 - [X] Php code for data connection (Hao Ding)
 - [X] User interface design (Hao Ding)
 - [X] Applying domain name for public accessible (Hao Ding)
-- [ ] Open a pull request (Hao Ding)
-
+- [ ] Pump implementation
 - [ ] PCB design (Revanth Kailashnath and Jinyu Cao)
 - [ ] Unit test （Jinyu Cao)
 
-## More detail in WIKI
+## More information in WIKI
 
