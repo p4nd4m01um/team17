@@ -16,8 +16,8 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 ## Flow Diagram
 <p align="center">
 <img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/Flow%20chart.jpg" width="800px" height="350px/> 
-
-***
+                                                                                                              
+========
 
 ## Components
 1._IR sensor: HC-SR501 PIR Motion Detector_
