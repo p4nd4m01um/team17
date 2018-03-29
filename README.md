@@ -24,7 +24,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 - [ ] Pump implementation
 - [X] Circuit design (Cao Jinyu & Revanth Kailashnath )
 - [X] PCB design (Jinyu Cao)  
-- [ ] PCB fabrecation  
+- [ ] PCB fabrication  
 - [ ] Unit test （Jinyu Cao)
 
 ## Setup
