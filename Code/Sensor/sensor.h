@@ -13,10 +13,17 @@ class sensor {
 		void readIrSensor();
 		void readTempHumSensor();
 		void snowCal();
+
 		float getTemp();
 		float getHum();
 		float getSnowPro();
 		float getReHum();
+		int getIr();
+		void setTemp(float input);
+                void setHum(float input);
+                void setSnowPro(float input);
+                void setReHum(float input);
+                void setIr(int input);
 
 
 

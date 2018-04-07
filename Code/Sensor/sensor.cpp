@@ -110,7 +110,7 @@ void sensor::snowCal(){
 
 	this->data_reHum = 9.5 * exp((-17.27*this->data_temp)/(this->data_temp + 238.3))*(10.5 - this->data_temp);
 	this->data_snowPro = this->data_reHum/this->data_hum;
-	if (this->data_snowPro >= 1){
+        if (this->data_snowPro <= -0.6){
 		cout<<"it will snow"<<endl;
 		digitalWrite(motor, HIGH);
 	}
@@ -136,4 +136,33 @@ float sensor::getSnowPro(){
 float sensor::getReHum(){
 
 	return this->data_reHum;
+}
+
+int sensor::getIr(){
+
+	return this->ir;
+}
+
+void sensor::setTemp(float input){
+
+	this->data_temp = input;
+}
+
+void sensor::setHum(float input){
+
+        this->data_hum = input;
+}
+
+void sensor::setSnowPro(float input){
+
+        this->data_snowPro = input;
+}
+
+void sensor::setReHum(float input){
+
+        this->data_reHum = input;
+}
+
+void sensor::setIr(int input){
+	this->ir = input;
 }
