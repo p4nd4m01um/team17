@@ -16,10 +16,10 @@
   ### Pdf files of PCB
    We designed two PCBs, one for sensors, another one for Motor driver.
    Each PCB has two layers. 
-   #### circuit of Sensors
+   #### Circuit of Sensors
    these files named as ``` Sensor top1.pdf ``` and ``` Sensor botom1.pdf ```  
    #### Circuit of motor
-   These files named as ```abc``` ```abc```   
+   These files named as ```Motor Bottom new``` ```Motor Top new```   
     
   ### Schematic  
   the circuit is shown in the file named ``` sensors.opj ```
