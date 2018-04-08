@@ -1,17 +1,5 @@
-## PCB description  
-  
-  ### PCB Artwork  
-   PCB Artwork in the circuit designing process refers to the planning and placing of electrical traces and via holes to connect every component mounted on the board with each other.  
-   PCB Artwork rules/guidelines is used as a base for the circuit design to facilitate a standard design and manufacturing procedures.
-   this file named as ``` art_parm.txt ``` .
-    
-  ### PCB NC  
-   Named as ``` nc_param.txt ```.  
-     
-  ### IPC2581  
-  IPC-2581 is a generic standard for printed circuit board and assembly manufacturing description data and transfer methodology.  
-  This file named as ``` ipc2581.txt```.
-  
+# PCB description  
+   
     
 ## Schematic and PCB   
 We selected Orcad capture and PCB editor to draw the PCB. 
@@ -61,4 +49,17 @@ D2 LED is to check if the circuit works properly.
   
 ### This one is the bottom layer.  
 ![motor pcb bottom](https://user-images.githubusercontent.com/36344537/38472466-74adcb7e-3b78-11e8-8929-ffdb804320a3.PNG)  
+  
+      
+  #### PCB Artwork  
+   PCB Artwork in the circuit designing process refers to the planning and placing of electrical traces and via holes to connect every component mounted on the board with each other.  
+   PCB Artwork rules/guidelines is used as a base for the circuit design to facilitate a standard design and manufacturing procedures.
+   this file named as ``` art_parm.txt ``` .
+    
+  #### PCB NC  
+   Named as ``` nc_param.txt ```.  
+     
+  #### IPC2581  
+  IPC-2581 is a generic standard for printed circuit board and assembly manufacturing description data and transfer methodology.  
+  This file named as ``` ipc2581.txt```.
   
