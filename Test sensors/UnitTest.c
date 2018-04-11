@@ -2,7 +2,7 @@
 #include<iostream>
 #include<wiringPi.h>
 #include<unistd.h>
-#include"sensor.h"
+#include"Sensor/sensor.h"
 #include<cmath>
 
 #define CATCH_CONFIG_MAIN
@@ -13,6 +13,8 @@
 #define MAX_TIME 100
 #define DHT11PIN 7
 #define ATTEMPTS 5
+
+sensor s1;
 
 using namespace std;
 
@@ -50,9 +52,9 @@ void sensor::snowCal(){
 
 
 TEST_CASE( "formula to calculate if it will snow", "[formula]" ) {
-    REQUIRE( sensor::snowCal(1) == 1 );
-    REQUIRE( sensor::snowCal(2) == 2 );
-    REQUIRE( sensor::snowCal(3) == 6 );
-    REQUIRE( sensor::snowCal(10) == 3628800 );
+    REQUIRE( s1.getSnowPro() == 1 );
+    REQUIRE( s1.getSnowPro() == 2 );
+    REQUIRE( s1.getSnowPro() == 6 );
+    REQUIRE( s1.getSnowPro() == 3628800 );
 }
 
