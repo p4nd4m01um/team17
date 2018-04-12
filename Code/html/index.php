@@ -4,6 +4,7 @@
                 <meta charset="UTF-8">
                 <script src="JS/jquery.min.js"></script>
 		<script src="JS/vue.min.js"></script>
+		<link rel="stylesheet" tpye="text/css" media="all" href="CSS/switch.css">
                 <link rel="stylesheet" type="text/css" media="all" href="CSS/font.css">
 	</head>
 
@@ -36,8 +37,22 @@
         </div>
 	<script src="JS/clock.js"></script>
 
+
+	<div class="toggle toggle--neon">
+		<input type="checkbox" id="toggle--neon" class="toggle--checkbox" onclick="switch();">
+		<label class="toggle--btn" for="toggle--neon" data-label-on="on"  data-label-off="off"></label>
+	</div>
+	<script src="JS/switch.js"></script>
+
         </body>
 </html>
+
+
+
+
+
+
+
 
 
 

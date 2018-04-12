@@ -38,7 +38,6 @@ int main(){
        		db.exeSQL(updataMysql);
 		s1.snowCal();
 
-
 	}
 
 	return 0;

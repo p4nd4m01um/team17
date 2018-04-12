@@ -3,6 +3,7 @@
 #include<unistd.h>
 #include"sensor.h"
 #include<cmath>
+#include<chrono>
 
 #define PIR   0
 #define motor 3
@@ -12,7 +13,7 @@
 #define ATTEMPTS 5
 
 using namespace std;
-
+using namespace chrono;
 
 void sensor::readIrSensor(){
 
@@ -24,21 +25,20 @@ void sensor::readIrSensor(){
 
 		if (this->ir==1){
 			cout<<"motion detected \n"<<endl;
-			digitalWrite(motor, HIGH);
-		}
+			digitalWrite(motor, LOW);
+			}
 		else{
-			digitalWrite(motor,LOW);
+			digitalWrite(motor, HIGH);
 			cout<<"nothing detected \n"<<endl;
 		}
 	}
 
 }
 
-
 void sensor::readTempHumSensor(){
 
 	while(1){
-
+		auto start = system_clock::now();
 		uint8_t lststate = HIGH; //last state
 		uint8_t counter = 0;
 		uint8_t j = 0, i;
@@ -97,7 +97,12 @@ void sensor::readTempHumSensor(){
 			if (this->data_tempHumSensor[2] & 0x80){
 				this->data_temp *= -1;
 			}
+			auto end = system_clock::now();
+			auto duration = duration_cast<microseconds>(end - start);
+
 			cout<<"Temperature :"<< this->data_temp<<" Humidity : "<< this->data_hum<<endl;
+			cout<<"spend ->>"<<double(duration.count()) * microseconds::period::num/microseconds::period::den<<"Second"<<endl;
+
 			sleep(3);
 
 
@@ -112,11 +117,13 @@ void sensor::snowCal(){
 	this->data_snowPro = this->data_reHum/this->data_hum;
         if (this->data_snowPro <= -0.6){
 		cout<<"it will snow"<<endl;
+		wiringPiSetup();
+		pinMode(motor, OUTPUT);
 		digitalWrite(motor, HIGH);
+		
 	}
 	cout<<this->data_snowPro<<endl;
 }
-
 
 float sensor::getTemp(){
 
