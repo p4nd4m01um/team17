@@ -16,45 +16,36 @@
 
 sensor s1;
 
-using namespace std;
 
-void sensor::readIrSensor(){
-
-
-	pinMode(PIR , INPUT);
-	while(1){
-		sleep(1);
-		this->ir = digitalRead(PIR);
-
-		if (this->ir==1){
-			cout<<"motion detected \n"<<endl;
-			digitalWrite(motor, HIGH);
-		}
-		else{
-			digitalWrite(motor,LOW);
-			cout<<"nothing detected \n"<<endl;
-		}
-	}
-
+TEST_CASE( "Base on the Humidity and Tem to calculate if it will snow  ", "[argument]" ) {
+    
+    
+    SECTION( "Set the humidity and temperature to test" ) {
+        s1.setTemp(10.5);
+	s1.setHum(20.5);   
+        
+        REQUIRE( s1.getSnowPro() ==  );
+ 
+    }
+    SECTION( "Reset the humidity and temperature to test " ) {
+	s1.setTemp(4.5);
+	s1.setHum(60.5);   
+        
+        REQUIRE( s1.getSnowPro() ==  );
+ 
+    }
+    SECTION( "Reset the humidity and temperature to test" ) {
+        s1.setTemp(1.0);
+	s1.setHum(70);   
+        
+        REQUIRE( s1.getSnowPro() ==  );
+    }
+    SECTION( "Reset the humidity and temperature to test" ) {
+        s1.setTemp(1.0);
+	s1.setHum(70);   
+        
+        REQUIRE( s1.getSnowPro() ==  );
+    }
 }
 
-
-void sensor::snowCal(){
-
-	this->data_reHum = 9.5 * exp((-17.27*this->data_temp)/(this->data_temp + 238.3))*(10.5 - this->data_temp);
-	this->data_snowPro = this->data_reHum/this->data_hum;
-        if (this->data_snowPro <= -0.6){
-		cout<<"it will snow"<<endl;
-		digitalWrite(motor, HIGH);
-	}
-	cout<<this->data_snowPro<<endl;
-}
-
-
-TEST_CASE( "formula to calculate if it will snow", "[formula]" ) {
-    REQUIRE( s1.getSnowPro() == 1 );
-    REQUIRE( s1.getSnowPro() == 2 );
-    REQUIRE( s1.getSnowPro() == 6 );
-    REQUIRE( s1.getSnowPro() == 3628800 );
-}
 
