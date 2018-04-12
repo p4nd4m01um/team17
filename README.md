@@ -34,7 +34,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 
 ## Flow Diagram
 <p align="center">
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/flowChart.png" width="550px" height="350px" /> 
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/systemFlow.png" width="800px" height="550px" /> 
   
 ***
 
