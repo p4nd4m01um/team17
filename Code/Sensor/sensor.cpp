@@ -5,23 +5,22 @@ void sensor::readIrSensor(){
 
 
 	pinMode(PIR , INPUT);
+
 	while(1){
 
+		sleep(1);
 		this->pow = digitalRead(POWER);
 
 		if (this->pow == 1){
 
-			cout<<"run"<<endl;
-			sleep(1);
 			this->ir = digitalRead(PIR);
 
 			if (this->ir==1){
 				cout<<"motion detected \n"<<endl;
 				digitalWrite(motor, LOW);
-
 			}
+
 			else{
-				digitalWrite(motor, HIGH);
 				cout<<"nothing detected \n"<<endl;
 
 			}
@@ -115,12 +114,22 @@ void sensor::snowCal(){
 
 	this->pow = digitalRead(POWER);
 
-        if (this->data_snowPro <= -0.6 && this->pow == 1){
+	if (this->pow ==1){
+
+		cout<<"run snow"<<endl;
+		if (this->data_snowPro <= -0.6){
+
 			cout<<"it will snow"<<endl;
 			wiringPiSetup();
 			pinMode(motor, OUTPUT);
 			digitalWrite(motor, HIGH);
 
+		}
+	}
+	else{
+		wiringPiSetup();
+		pinMode(motor, OUTPUT);
+		digitalWrite(motor, LOW);
 	}
 
 	cout<<this->data_snowPro<<endl;
