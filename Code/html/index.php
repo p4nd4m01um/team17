@@ -39,11 +39,33 @@
 
 
 	<div class="toggle toggle--neon">
-		<input type="checkbox" id="toggle--neon" class="toggle--checkbox" onclick="switch();">
+		<input type="checkbox" id="toggle--neon" class="toggle--checkbox" onchange="ppowerr();">
 		<label class="toggle--btn" for="toggle--neon" data-label-on="on"  data-label-off="off"></label>
 	</div>
-	<script src="JS/switch.js"></script>
+	<script>
+		function ppowerr(){
 
+			if(document.getElementById("toggle--neon").checked){
+				$.ajax({
+					url:"turnOn.php",
+					type:"POST",
+					success:function(result){
+						alert("checked");
+					}
+				});
+			}
+			else{
+				 $.ajax({
+                     			   url:"turnOff.php",
+              			           type:"POST",
+                     			   success:function(result){
+                             			   alert("unchecked");
+                       			   }
+               			 });
+
+        		}
+		}
+	</script>
         </body>
 </html>
 

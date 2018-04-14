@@ -1,3 +1,3 @@
 <?php
-	shell_exec('gpio -g write 22 1');
+	shell_exec("gpio write 4 1");
 ?>

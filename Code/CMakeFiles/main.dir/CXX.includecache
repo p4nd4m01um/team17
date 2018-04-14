@@ -15,6 +15,16 @@ mysql/mysql.h
 -
 
 /home/pi/team17/Code/Sensor/sensor.h
+iostream
+-
+wiringPi.h
+-
+unistd.h
+-
+cmath
+-
+chrono
+-
 
 /home/pi/team17/Code/main.cpp
 iostream

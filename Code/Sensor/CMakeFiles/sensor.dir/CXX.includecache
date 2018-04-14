@@ -7,18 +7,18 @@
 #IncludeRegexTransform: 
 
 /home/pi/team17/Code/Sensor/sensor.cpp
+sensor.h
+/home/pi/team17/Code/Sensor/sensor.h
+
+/home/pi/team17/Code/Sensor/sensor.h
 iostream
 -
 wiringPi.h
 -
 unistd.h
 -
-sensor.h
-/home/pi/team17/Code/Sensor/sensor.h
 cmath
 -
 chrono
 -
-
-/home/pi/team17/Code/Sensor/sensor.h
 

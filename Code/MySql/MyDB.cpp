@@ -1,9 +1,5 @@
-
-#include<iostream>
-#include<string>
 #include "MyDB.h"
 
-using namespace std;
 
 MyDB::MyDB()
 {
