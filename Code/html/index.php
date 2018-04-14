@@ -4,8 +4,7 @@
                 <meta charset="UTF-8">
                 <script src="JS/jquery.min.js"></script>
 		<script src="JS/vue.min.js"></script>
-		<link rel="stylesheet" tpye="text/css" media="all" href="CSS/switch.css">
-                <link rel="stylesheet" type="text/css" media="all" href="CSS/font.css">
+		<link rel="stylesheet" type="text/css" media="all" href="CSS/font.css">
 	</head>
 
 	<script>

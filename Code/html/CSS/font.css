@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
 @font-face {
   font-family: 'Share Tech Mono';
   font-style: normal;
@@ -5,6 +8,14 @@
   src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v7/J7aHnp1uDWRBEqV98dVQztYldFcLowEF.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Audiowide"), local("Audiowide-Regular"), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
 html, body {
   height: 100%;
 }
@@ -79,5 +90,91 @@ p {
   font-size: 40px;
   padding: 240px 0 0;
 }
+
+
+.toggle {
+  display: block;
+  text-align: center;
+  margin-top: 40%px;
+  user-select: none;
+}
+
+.toggle--checkbox {
+  display: none;
+}
+
+.toggle--btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.4em;
+  transition: all 350ms ease-in;
+}
+.toggle--btn:hover {
+  cursor: pointer;
+}
+
+.toggle--btn, .toggle--btn:before, .toggle--btn:after,
+.toggle--checkbox,
+.toggle--checkbox:before,
+.toggle--checkbox:after,
+.toggle--feature,
+.toggle--feature:before,
+.toggle--feature:after {
+  transition: all 250ms ease-in;
+}
+.toggle--btn:before, .toggle--btn:after,
+.toggle--checkbox:before,
+.toggle--checkbox:after,
+.toggle--feature:before,
+.toggle--feature:after {
+  content: '';
+  display: block;
+}
+
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900;
+  }
+}
+.toggle--neon {
+
+  margin-top: 0;
+  padding: 50% 0;
+}
+.toggle--neon .toggle--btn {
+  font-family: Audiowide;
+  text-transform: uppercase;
+  font-size: 5.2em;
+  color: #333;
+  text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent;
+}
+.toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
+  display: inline-block;
+  margin: 0 20px;
+  transition: all 220ms ease-in-out;
+}
+.toggle--neon .toggle--btn:before {
+  content: attr(data-label-off);
+  animation: neon 1.5s ease-in-out infinite alternate;
+  animation-delay: 90ms;
+  color: #f1f1f1;
+}
+.toggle--neon .toggle--btn:after {
+  content: attr(data-label-on);
+}
+.toggle--neon .toggle--checkbox:checked + .toggle--btn:before {
+  animation: none;
+  color: #333;
+}
+.toggle--neon .toggle--checkbox:checked + .toggle--btn:after {
+  animation: neon 1.5s ease-in-out infinite alternate;
+  animation-delay: 90ms;
+  color: #f1f1f1;
+}
+
 
 
