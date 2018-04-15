@@ -9,12 +9,11 @@
 
 using namespace std;
 
-int main(){ 
+int main(){
 
 	sensor s1;
 	MyDB db;
 	db.initDB("localhost", "pi", "", "sensor");
-	string updataMysql;
 
 
 
@@ -32,12 +31,9 @@ int main(){
 
 	while(1){
 		sleep(3);
-		updataMysql = "UPDATE THS SET value='" + to_string(s1.getTemp()) +
-			      "',value2='" + to_string(s1.getHum()) +
-                     	      "' WHERE name='t&h';";
-       		db.exeSQL(updataMysql);
+		db.update(s1.getTemp(),s1.getHum());
 		s1.snowCal();
-
+		sleep();
 	}
 
 	return 0;

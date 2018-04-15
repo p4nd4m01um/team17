@@ -13,11 +13,13 @@ class MyDB
     ~MyDB();
     bool initDB(string host,string user,string pwd,string db_name);
     bool exeSQL(string sql);
+    void update(float temp, float humd);
 
     private:
     MYSQL *mysql;
     MYSQL_RES *result;
     MYSQL_ROW row;
+    string updateMysql;
 };
 
 

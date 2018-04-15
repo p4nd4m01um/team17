@@ -4,12 +4,13 @@
 #include<cmath>
 #include<chrono>
 
-#define PIR   0
-#define motor 3
+#define PIR_PIN   0
+#define MOTOR_PIN 3
+#define DHT22_PIN 7
+#define POWER_PIN 4
 #define MAX_TIME 100
-#define DHT11PIN 7
 #define ATTEMPTS 5
-#define POWER 4
+
 using namespace std;
 using namespace chrono;
 
@@ -21,8 +22,11 @@ class sensor {
 	private:
 		int ir, data_tempHumSensor[5], pow;
 		float data_temp, data_hum, data_reHum, data_snowPro;
+		bool irDetect;
+
 
 	public:
+		sensor();
 
 		void readIrSensor();
 		void readTempHumSensor();
