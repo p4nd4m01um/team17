@@ -33,7 +33,6 @@ int main(){
 		sleep(3);
 		db.update(s1.getTemp(),s1.getHum());
 		s1.snowCal();
-		sleep();
 	}
 
 	return 0;
