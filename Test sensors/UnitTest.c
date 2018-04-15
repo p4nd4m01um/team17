@@ -20,28 +20,28 @@ sensor s1;
 TEST_CASE( "Base on the Humidity and Tem to calculate if it will snow  ", "[argument]" ) {
     
     SECTION( "Set the humidity and temperature to test" ) {
-        s1.setTemp(10.5);
+        s1.setTemp(10);
 	s1.setHum(20.5);   
         s1.snowCal();
-        REQUIRE( s1.getSnowPro() ==  );
+        REQUIRE( s1.getSnowPro() == 0.115578 );
     }
     SECTION( "Reset the humidity and temperature to test " ) {
 	s1.setTemp(4.5);
 	s1.setHum(60.5);   
         s1.snowCal();
-        REQUIRE( s1.getSnowPro() ==  );
+        REQUIRE( s1.getSnowPro() == 0.684087 );
     }
     SECTION( "Reset the humidity and temperature to test" ) {
         s1.setTemp(1.0);
 	s1.setHum(70);   
         s1.snowCal();
-        REQUIRE( s1.getSnowPro() ==  );
+        REQUIRE( s1.getSnowPro() == 1.19952 );
     }
-    SECTION( "Reset the humidity and temperature to test" ) {
+    SECTION( "used a wrong number to test" ) {
         s1.setTemp(1.0);
 	s1.setHum(70);   
         s1.snowCal();
-        REQUIRE( s1.getSnowPro() ==  );
+        REQUIRE( s1.getSnowPro() == 0.8 );
     }
 
 }
