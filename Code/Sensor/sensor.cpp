@@ -138,20 +138,11 @@ void sensor::snowCal(){
 		if (this->data_snowPro <= -0.6 && this->irDetect == false){
 
 			cout<<"it will snow"<<endl;
-			this->startMotor = true;
-			this->startMotorTime = system_clock::now();
-
-
-                        this->duration = duration_cast<microseconds>(endIr - startIr);
-                        double(duration.count()) * microseconds::period::num/microseconds::period::den<<"Second"<<endl;
-
-
-
-
-                        this->irDetect = false;
 
 			digitalWrite(MOTOR_PIN, HIGH);
 			sleep(30);
+			digitalWrite(MOTOR_PIN, LOW);
+			sleep(21600);
 
 		}
 	}
