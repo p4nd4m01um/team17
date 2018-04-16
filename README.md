@@ -69,7 +69,8 @@ communication.  
 
 
 ## More information in WIKI
-# YouTube Video: [youtube_icon]: https://raw.githubusercontent.com/croaljack0/IncubatePi/master/Media/Marketing%20Images/youtube_icon.png  
+# YouTube Video:
+[youtube_icon]: https://raw.githubusercontent.com/croaljack0/IncubatePi/master/Media/Marketing%20Images/youtube_icon.png  
 [youtube_url]: https://youtu.be/QaHXD64GoVk  
 [![alt text][youtube_icon]][youtube_url]  
 
