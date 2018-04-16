@@ -75,3 +75,5 @@ communication.  
 
 Course name Real Time Embedded Programming, in association with University of Glasgow.  
 Course convener: Dr. Bernd Porr
+  
+[youtube_icon]: https://raw.githubusercontent.com/croaljack0/IncubatePi/master/Media/Marketing%20Images/youtube_icon.png
