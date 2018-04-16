@@ -95,7 +95,7 @@ Mechanical setup:10 days
   2. Instructables:  https://www.instructables.com/id/Anti-Icing-System/
   3. reddit/r/diy:  https://www.reddit.com/r/raspberry_pi/comments/8coow3/antiicing_system_using_raspberry_pi/?st=jg2fs7wc&sh=95f0193a
   4. Submitted the project to hackaday (waiting for them to revert back)
-  5. create YouTube videos
+  5. create YouTube videos: https://www.youtube.com/watch?v=QaHXD64GoVk   https://www.youtube.com/watch?v=q8ZnzTlgLoI
 
  
 Release strategy success: TBD
