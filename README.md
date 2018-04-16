@@ -70,8 +70,7 @@ communication.  
 
 ## More information in WIKI
 # YouTube Video:
-
-[![](https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/videoCover.jpg)](http://www.youtube.com/watch?v=QaHXD64GoVk "")
+[![](https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/videoCover.png)](http://www.youtube.com/watch?v=QaHXD64GoVk "")
 
 
 
