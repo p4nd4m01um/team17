@@ -72,6 +72,8 @@ communication.  
 # YouTube Video:
 [![](https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/videoCover.png)](http://www.youtube.com/watch?v=QaHXD64GoVk "")
 
+[![](https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/videoCoverCriteria.png)](http://www.youtube.com/watch?v=q8ZnzTlgLoI "")
+
 
 
 ## University of Glasgow
