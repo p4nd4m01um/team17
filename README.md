@@ -50,6 +50,12 @@ communication.  
 <img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-DHT22.png" width="700px" height="200px" />
 </p>
 
+**3. _Brushless DC Motor Pump Decdeal QR50E _**
+- Low cost and Versatile
+- 12V 5W Rating
+- 280l/H pump quantity
+- can handle different types of solutions including salt water (brine) and oil at various temparatures
+
 ## How to implement code  
 1. Clone the repository.
 2. Copy the Code/html to /var/www/html
