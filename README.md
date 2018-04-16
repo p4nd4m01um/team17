@@ -56,6 +56,8 @@ communication.  
 - 280l/H pump quantity
 - can handle different types of solutions including salt water (brine) and oil at various temparatures
 
+<p align="center">
+
 ## How to implement code  
 1. Clone the repository.
 2. Copy the Code/html to /var/www/html
