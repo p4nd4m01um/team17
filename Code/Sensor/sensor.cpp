@@ -207,6 +207,11 @@ bool sensor::getPow(){
 	return this->pow;
 }
 
+void sensor::getIrDetect(bool input){
+
+	return this->irDetect;
+}
+
 void sensor::setTemp(float input){
 
 	this->data_temp = input;
@@ -234,4 +239,8 @@ void sensor::setIr(int input){
 void sensor::setPow(bool input){
 
 	this->pow = input;
+}
+void sensor::setIrDetect(bool input){
+
+	this->irDetect = input;
 }
