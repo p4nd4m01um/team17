@@ -55,7 +55,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 </p>
 
 
-**2. _Humidity and temperature sensor: DHT22_**
+**2. _Humidity and temperature sensor: DHT22(AM2302)_**
 - Low cost  
 - 3 to 5V power and I/O  
 - 2.5mA max current use during conversion (while requesting data)  
