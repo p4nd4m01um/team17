@@ -70,3 +70,8 @@ communication.  
 
 ## More information in WIKI
 # YouTube Video URL: https://youtu.be/QaHXD64GoVk
+
+## University of Glasgow
+
+Course name Real Time Embedded Programming, in association with University of Glasgow.  
+Course convener: Dr. Bernd Porr
