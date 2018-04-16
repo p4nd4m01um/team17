@@ -20,26 +20,34 @@ sensor s1;
 TEST_CASE( "Base on the Humidity and Tem to calculate if it will snow  ", "[argument]" ) {
     
     SECTION( "Set the humidity and temperature to test" ) {
+	s1.setSnowPro(0);
         s1.setTemp(10);
-	s1.setHum(20.5);   
+	s1.setHum(20.5);  
+	s1.setIrDetect(true);
         s1.snowCal();
-        REQUIRE( s1.getSnowPro() == 0.115578 );
+        REQUIRE( s1.getSnowPro() == 0 );
     }
     SECTION( "Reset the humidity and temperature to test " ) {
+	s1.setSnowPro(0);
 	s1.setTemp(4.5);
-	s1.setHum(60.5);   
+	s1.setHum(60.5);
+	s1.setIrDetect(false);
         s1.snowCal();
         REQUIRE( s1.getSnowPro() == 0.684087 );
     }
     SECTION( "Reset the humidity and temperature to test" ) {
+	s1.setSnowPro(0);
         s1.setTemp(1.0);
-	s1.setHum(70);   
+	s1.setHum(70); 
+	s1.setIrDetect(false);
         s1.snowCal();
         REQUIRE( s1.getSnowPro() == 1.19952 );
     }
-    SECTION( "used a wrong number to test" ) {
+    SECTION( "Used a wrong number to test" ) {
+	s1.setSnowPro(0);
         s1.setTemp(1.0);
-	s1.setHum(70);   
+	s1.setHum(70);  
+	s1.setIrDetect(false);
         s1.snowCal();
         REQUIRE( s1.getSnowPro() == 0.8 );
     }
@@ -53,12 +61,16 @@ TEST_CASE("Test Humidity and Temperature sensor"){
 }
 
 TEST_CASE("Test PIR sensor"){
+	s1.setIr(1)
+	s1.setPow(1);
 	s1.readIrSensor();	
-        REQUIRE( s1.getIr()==0);
+        REQUIRE( s1.getIr() == 1 );
 }
 TEST_CASE("Test PIR sensor"){
+	s1.setIr(0)
+	s1.setPow(1);
 	s1.readIrSensor();	
-        REQUIRE( s1.getIr()==1);
+        REQUIRE( s1.getIr() == 0 );
 }
 
 
