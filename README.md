@@ -69,6 +69,7 @@ communication.  
 
 
 ## More information in [WIKI](https://github.com/p4nd4m01um/team17/wiki)  
+## Criteria for assessment： [Criteria](https://github.com/p4nd4m01um/team17/blob/master/Criteria.md)
   
 # YouTube Video:
 [![](https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/videoCover.png)](http://www.youtube.com/watch?v=QaHXD64GoVk "")
