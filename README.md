@@ -21,11 +21,11 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 - [X] User interface design (Hao Ding)
 - [X] Applying domain name for public accessible (Hao Ding)
 - [X] WIKI ((Revanth Kailashnath, Jinyu Cao and Hao Ding)
-- [ ] Pump implementation
+- [X] Pump implementation
 - [X] Circuit design (Cao Jinyu & Revanth Kailashnath )
 - [X] PCB design (Jinyu Cao)  
-- [ ] PCB fabrication  
-- [ ] Unit test （Jinyu Cao)
+- [X] PCB fabrication  
+- [X] Unit test （Jinyu Cao)
 
 ## Setup
 <p align="center">
