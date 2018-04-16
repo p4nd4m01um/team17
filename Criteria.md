@@ -122,7 +122,7 @@ _**15. Time allocation:**_
 _**16. Version Control Software and numbering of releases/ milestones:**_
 
 Git as it is free. GitHub has a wide popularity in the technogeek community. It is easy to log, maintain and very efficient to use.
-A project with only one branch(master) was used with accomodating and sensible distribution of various tasks among the team members. V 1.0 was released on the 16th of April, 2018 to mark the milestone of initial release of the product.
+A project with only one branch(master) was used with accomodating and sensible distribution of various tasks among the team members. V 1.0 was released on the 16th of April, 2018 to mark the milestone of initial release of the product. later versions will be released based on the performance and iff tweaking is necessary.
 
 _**17. Release strategy:**_
 
