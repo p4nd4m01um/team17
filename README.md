@@ -70,9 +70,7 @@ communication.  
 
 ## More information in WIKI
 # YouTube Video:
-[youtube_icon]: https://raw.githubusercontent.com/croaljack0/IncubatePi/master/Media/Marketing%20Images/youtube_icon.png  
-[youtube_url]: https://youtu.be/QaHXD64GoVk  
-[![alt text][youtube_icon]][youtube_url]  
+[![](http://img.youtube.com/vi/QaHXD64GoVk/0.jpg)](http://www.youtube.com/watch?v=QaHXD64GoVk "")
 
 ## University of Glasgow
 
