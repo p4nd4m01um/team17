@@ -70,7 +70,9 @@ communication.  
 
 ## More information in WIKI
 # YouTube Video:
-[![](http://img.youtube.com/vi/QaHXD64GoVk/0.jpg)](http://www.youtube.com/watch?v=QaHXD64GoVk "")
+<p align="center">
+[![video](https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/videoCover.jpg)](http://www.youtube.com/watch?v=QaHXD64GoVk "Anti-Icing System")
+</p>
 
 ## University of Glasgow
 
