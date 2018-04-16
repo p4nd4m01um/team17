@@ -56,5 +56,9 @@ TEST_CASE("Test PIR sensor"){
 	s1.readIrSensor();	
         REQUIRE( s1.getIr()==0);
 }
+TEST_CASE("Test PIR sensor"){
+	s1.readIrSensor();	
+        REQUIRE( s1.getIr()==1);
+}
 
 
