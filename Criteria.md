@@ -91,9 +91,9 @@ Mechanical setup:10 days
 17. Version Control Software: Git as it is free.
  
 18. Release strategy:	       	
-  1. Hackster
-  2. Instructables
-  3. reddit/r/diy
+  1. Hackster:  https://www.hackster.io/vant4u/anti-icing-system-440a41
+  2. Instructables:  https://www.instructables.com/id/Anti-Icing-System/
+  3. reddit/r/diy:  https://www.reddit.com/r/raspberry_pi/comments/8coow3/antiicing_system_using_raspberry_pi/?st=jg2fs7wc&sh=95f0193a
   4. Submitted the project to hackaday (waiting for them to revert back)
   5. create YouTube videos
 
