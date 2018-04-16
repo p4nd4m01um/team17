@@ -63,15 +63,27 @@ TEST_CASE("Test Humidity and Temperature sensor"){
 
 TEST_CASE("Test PIR sensor")
 {
-     SECTION("Test the PIR sensor"){
+     SECTION("Test the PIR sensor pow=1"){
 	s1.setIr(1);
 	s1.setPow(1);
 	s1.readIrSensor();	
         REQUIRE( s1.getIr() == 1 );
     }
-     SECTION("Test the PIR sensor"){
+     SECTION("Test the PIR sensor pow=1"){
 	s1.setIr(0);
 	s1.setPow(1);
+	s1.readIrSensor();	
+        REQUIRE( s1.getIr() == 0 );
+     }
+     SECTION("Test the PIR sensor pow=0"){
+	s1.setPow(0);
+	s1.setIr(1);
+	s1.readIrSensor();	
+        REQUIRE( s1.getIr() == 0 );
+    }
+     SECTION("Test the PIR sensor pow=0"){
+	s1.setIr(0);
+	s1.setPow(0);
 	s1.readIrSensor();	
         REQUIRE( s1.getIr() == 0 );
      }
