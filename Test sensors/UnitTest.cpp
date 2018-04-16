@@ -60,17 +60,21 @@ TEST_CASE("Test Humidity and Temperature sensor"){
 	REQUIRE( s1.getTemp()>=-20);
 }
 
-TEST_CASE("Test PIR sensor"){
-	s1.setIr(1)
+
+TEST_CASE("Test PIR sensor")
+{
+     SECTION("Test the PIR sensor"){
+	s1.setIr(1);
 	s1.setPow(1);
 	s1.readIrSensor();	
         REQUIRE( s1.getIr() == 1 );
-}
-TEST_CASE("Test PIR sensor"){
-	s1.setIr(0)
+    }
+     SECTION("Test the PIR sensor"){
+	s1.setIr(0);
 	s1.setPow(1);
 	s1.readIrSensor();	
         REQUIRE( s1.getIr() == 0 );
+     }
 }
 
 
