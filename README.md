@@ -8,25 +8,6 @@ In the winter of Glasgow, Our team found roads always icy and slippery. Some peo
 ## Target
 This project aims to prevent the formation of ice or snow by using brine as the anti-icing agent. Utilising the humidity and temperature sensor to detect the environmental conditions, the sprinkler spreads the brine water which is controlled by Raspberry Pi. IR sensor is used to detect people and animals. When it detects people, the sprinkler turns off.  
 
-## Contributes and Progress
-- [X] Sensor & Pump selection (Cao Jinyu & Revanth Kailashnath)  
-- [X] LICENSE (Revanth Kailashnath)  
-- [x] Code of Temperature & Humidity sensor (Hao Ding)  
-- [x] Code of IR sensor (Hao Ding)  
-- [X] Code of Snow calculation (Hao Ding)
-- [X] Code of MySql connection (Hao Ding)
-- [X] Building MySql database (Hao Ding)
-- [X] Building Web server (Hao Ding)
-- [X] Php code for data connection (Hao Ding)
-- [X] User interface design (Hao Ding)
-- [X] Applying domain name for public accessible (Hao Ding)
-- [X] WIKI ((Revanth Kailashnath, Jinyu Cao and Hao Ding)
-- [X] Pump implementation
-- [X] Circuit design (Cao Jinyu & Revanth Kailashnath )
-- [X] PCB design (Jinyu Cao)  
-- [X] PCB fabrication  
-- [X] Unit test （Jinyu Cao)
-
 ## Setup
 <p align="center">
 <img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/Setup_diagram.png" width="700px" height="400px" /> 
