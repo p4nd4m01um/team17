@@ -26,7 +26,8 @@ void sensor::readIrSensor(){
 				digitalWrite(MOTOR_PIN, LOW);
 				this->irDetect = true;
 				auto startIr = system_clock::now();
-				sleep(10);
+
+				sleep(5);
 				this->irDetect = false;
 				auto endIr = system_clock::now();
                        		auto durationIr = duration_cast<microseconds>(endIr - startIr);
@@ -129,6 +130,7 @@ void sensor::snowCal(){
 	this->data_reHum = 9.5 * exp((-17.27*this->data_temp)/(this->data_temp + 238.3))*(10.5 - this->data_temp);
 	this->data_snowPro = this->data_reHum/this->data_hum;
 	cout<<"the pow number is "<<this->pow<<endl;
+	cout<<"snow pro===>"<<this->data_snowPro<<endl;
 
 	this->pow = digitalRead(POWER_PIN);
 
@@ -138,28 +140,16 @@ void sensor::snowCal(){
 		if (this->data_snowPro <= -0.6 && this->irDetect == false){
 
 			cout<<"it will snow"<<endl;
-			this->startMotor = true;
-			this->startMotorTime = system_clock::now();
-
-
-                        this->duration = duration_cast<microseconds>(endIr - startIr);
-                        double(duration.count()) * microseconds::period::num/microseconds::period::den<<"Second"<<endl;
-
-
-
-
-                        this->irDetect = false;
-
 			digitalWrite(MOTOR_PIN, HIGH);
-			sleep(30);
+			sleep(10);
+			digitalWrite(MOTOR_PIN,LOW);
 
 		}
-	}
-	else{
-		digitalWrite(MOTOR_PIN, LOW);
-	}
+		else{
+			digitalWrite(MOTOR_PIN, LOW);
+		}
 
-	cout<<"snow pro===>"<<this->data_snowPro<<endl;
+	}
 }
 
 float sensor::getTemp(){

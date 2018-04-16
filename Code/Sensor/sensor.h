@@ -22,7 +22,8 @@ class sensor {
 	private:
 		int ir, data_tempHumSensor[5], pow;
 		float data_temp, data_hum, data_reHum, data_snowPro;
-		bool irDetect;
+		bool irDetect, startMotor;
+		double rest, startMT;
 
 
 	public:
