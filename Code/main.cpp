@@ -33,7 +33,10 @@ int main(){
 		sleep(3);
 		db.update(s1.getTemp(),s1.getHum());
 		s1.snowCal();
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1fb7783379f216c2f319627cab2731f2a8be111
 	}
 
 	return 0;

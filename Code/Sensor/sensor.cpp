@@ -140,9 +140,17 @@ void sensor::snowCal(){
 		if (this->data_snowPro <= -0.6 && this->irDetect == false){
 
 			cout<<"it will snow"<<endl;
+<<<<<<< HEAD
 			digitalWrite(MOTOR_PIN, HIGH);
 			sleep(10);
 			digitalWrite(MOTOR_PIN,LOW);
+=======
+
+			digitalWrite(MOTOR_PIN, HIGH);
+			sleep(30);
+			digitalWrite(MOTOR_PIN, LOW);
+			sleep(21600);
+>>>>>>> d1fb7783379f216c2f319627cab2731f2a8be111
 
 		}
 		else{
