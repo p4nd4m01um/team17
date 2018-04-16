@@ -43,7 +43,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 - Good for 0-100% humidity readings with 2-5% accuracy  
 - Good for -40 to 80°C temperature readings ±0.5°C accuracy  
 - No more than 0.5 Hz sampling rate (once every 2 seconds)  
-- Single-bus data is used for communication between MCU and DHT22, it costs 5mS for single time
+- Single-bus data is used for communication between MCU and DHT22, it costs 5ms for single time
 communication.  
 
 <p align="center">
