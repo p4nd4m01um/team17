@@ -149,23 +149,22 @@ void sensor::snowCal(){
 
 	if (this->pow ==1){
 
-		//Since we do not have snow condition outdoors right now
-		//the indoor temperature and humidity are unlikly to trigger the motor
-		//So, we set a threshould which suitable for triggering the motor with the indoor weather conditions.
-		//With indoor weather condition, the calculator gives icing value around "-0.7", we set "-0.6" as the threshould to trriger motor.
-		if (this->data_snowPro <= -0.6 && this->irDetect == false){
+		//The threshould we set "0.9" 
+		//This means when the calculator yields a probability great than 90%, it works.
+		
+		if (this->data_snowPro <= 0.9 && this->irDetect == false){
 
 			cout<<"It will snow"<<endl;
 
 			digitalWrite(MOTOR_PIN, HIGH);
 			cout<<"==========================="<<endl;
-			cout<<"Motor starts for 10 seconds"<<endl;
-			sleep(10);
+			cout<<"Motor starts for 10 minutes"<<endl;
+			sleep(600);
 
 			cout<<"==========================="<<endl;
 			cout<<"Motor stops for 6 hours"<<endl;
 			digitalWrite(MOTOR_PIN,LOW);
-			sleep(20); //for testing we set 20 seconds
+			sleep(21600); //stop working for 6 hours
 
 			cout<<"============================"<<endl;
 			cout<<"Trigger starts working again"<<endl;
