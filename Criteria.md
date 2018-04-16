@@ -101,6 +101,8 @@ Mechanical setup:10 days
 Release strategy success: TBD
  
 19. Measurement of success: TBD
+
+we will will update the success story by the end of the course duration.
  
  
  
