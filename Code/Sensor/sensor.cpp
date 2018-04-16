@@ -1,7 +1,7 @@
 
 #include"sensor.h"
 
-sensor::sensor(){
+sensor::sensor(){		//constructor sets pin mode when the object is created.
 
 	pinMode(MOTOR_PIN, OUTPUT);
 	pinMode(POWER_PIN,INPUT);
@@ -15,29 +15,36 @@ void sensor::readIrSensor(){
 	while(1){
 
 		sleep(1);
-		this->pow = digitalRead(POWER_PIN);
+
+		this->pow = digitalRead(POWER_PIN); //read the main power circumstance (whether user trun on/off the toggle) 
 
 		if (this->pow == 1){
 
-			this->ir = digitalRead(PIR_PIN);
+			this->ir = digitalRead(PIR_PIN); //read PIR sensor pin value
 
 			if (this->ir==1){
-				cout<<"motion detected \n"<<endl;
-				digitalWrite(MOTOR_PIN, LOW);
-				this->irDetect = true;
-				auto startIr = system_clock::now();
 
-				sleep(5);
+				cout<<"=================="<<endl;
+				cout<<"motion detected \n"<<endl;
+				cout<<"=================="<<endl;
+
+				digitalWrite(MOTOR_PIN, LOW); //stop the motor
+
+				this->irDetect = true; // true on the detected value (the temperature & humidity sensor stop working )
+
+				auto startIr = system_clock::now();
+				sleep(5);		//stop for 5 second for pedestrian pass through.
 				this->irDetect = false;
 				auto endIr = system_clock::now();
                        		auto durationIr = duration_cast<microseconds>(endIr - startIr);
-                       		cout<<"sleeep ->>"<<double(durationIr.count()) * microseconds::period::num/microseconds::period::den<<"Second"<<endl;
-
+                       		cout<<"sleep ->>"<<double(durationIr.count()) * microseconds::period::num/microseconds::period::den<<"Second"<<endl;
 
 			}
 
 			else{
-				cout<<"nothing detected \n"<<endl;
+				cout<<"=================="<<endl;
+				cout<<"Nothing detected\n"<<endl;
+				cout<<"=================="<<endl;
 
 			}
 		}
@@ -113,11 +120,12 @@ void sensor::readTempHumSensor(){
 
 			auto end = system_clock::now();
 			auto duration = duration_cast<microseconds>(end - start);
-
+			cout<<"==================================================================="<<endl;
 			cout<<"Temperature :"<< this->data_temp<<" Humidity : "<< this->data_hum<<endl;
-			cout<<"spend ->>"<<double(duration.count()) * microseconds::period::num/microseconds::period::den<<"Second"<<endl;
-
-			sleep(3);
+			cout<<"==================================================================="<<endl;
+			cout<<"Fetching T&H spends ->>"<<double(duration.count()) * microseconds::period::num/microseconds::period::den<<"Second"<<endl;
+			cout<<"==================================================================="<<endl;
+			sleep(3); //sleep for 3 seconds and then start for next data fetching.
 
 
 		}
@@ -127,31 +135,41 @@ void sensor::readTempHumSensor(){
 
 void sensor::snowCal(){
 
+	// this is a equation which produces a icing probability with the given temperature and humidity values.
 	this->data_reHum = 9.5 * exp((-17.27*this->data_temp)/(this->data_temp + 238.3))*(10.5 - this->data_temp);
 	this->data_snowPro = this->data_reHum/this->data_hum;
-	cout<<"the pow number is "<<this->pow<<endl;
-	cout<<"snow pro===>"<<this->data_snowPro<<endl;
+
+	cout<<"====================="<<endl;
+	cout<<"The main power is "<<this->pow<<endl;
+	cout<<"====================="<<endl;
+	cout<<"Icing probability value ===>"<<this->data_snowPro<<endl;
+	cout<<"====================="<<endl;
 
 	this->pow = digitalRead(POWER_PIN);
 
 	if (this->pow ==1){
 
-		cout<<"run snow"<<endl;
+		//Since we do not have snow condition outdoors right now
+		//the indoor temperature and humidity are unlikly to trigger the motor
+		//So, we set a threshould which suitable for triggering the motor with the indoor weather conditions.
+		//With indoor weather condition, the calculator gives icing value around "-0.7", we set "-0.6" as the threshould to trriger motor.
 		if (this->data_snowPro <= -0.6 && this->irDetect == false){
 
-			cout<<"it will snow"<<endl;
-<<<<<<< HEAD
+			cout<<"It will snow"<<endl;
+
 			digitalWrite(MOTOR_PIN, HIGH);
+			cout<<"==========================="<<endl;
+			cout<<"Motor starts for 10 seconds"<<endl;
 			sleep(10);
+
+			cout<<"==========================="<<endl;
+			cout<<"Motor stops for 6 hours"<<endl;
 			digitalWrite(MOTOR_PIN,LOW);
-=======
+			sleep(20); //for testing we set 20 seconds
 
-			digitalWrite(MOTOR_PIN, HIGH);
-			sleep(30);
-			digitalWrite(MOTOR_PIN, LOW);
-			sleep(21600);
->>>>>>> d1fb7783379f216c2f319627cab2731f2a8be111
-
+			cout<<"============================"<<endl;
+			cout<<"Trigger starts working again"<<endl;
+			cout<<"============================"<<endl;
 		}
 		else{
 			digitalWrite(MOTOR_PIN, LOW);
@@ -185,6 +203,11 @@ int sensor::getIr(){
 	return this->ir;
 }
 
+bool sensor::getPow(){
+
+	return this->pow;
+}
+
 void sensor::setTemp(float input){
 
 	this->data_temp = input;
@@ -208,4 +231,8 @@ void sensor::setReHum(float input){
 void sensor::setIr(int input){
 
 	this->ir = input;
+}
+void sensor::setPow(bool input){
+
+	this->pow = input;
 }

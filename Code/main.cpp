@@ -22,21 +22,19 @@ int main(){
 	}
 
 
-	thread t1(&sensor::readIrSensor, &s1);
+	thread t1(&sensor::readIrSensor, &s1); // thread 1 -- read IR sensor
 	t1.detach();
 
-	thread t2(&sensor::readTempHumSensor, &s1);
+	thread t2(&sensor::readTempHumSensor, &s1); // thread 2 -- read temperature and humidity sensor
 	t2.detach();
 
 
 	while(1){
-		sleep(3);
-		db.update(s1.getTemp(),s1.getHum());
-		s1.snowCal();
-<<<<<<< HEAD
 
-=======
->>>>>>> d1fb7783379f216c2f319627cab2731f2a8be111
+		sleep(3);
+		db.update(s1.getTemp(),s1.getHum()); // update the the data into database
+		s1.snowCal();	//run calculator and trigger
+
 	}
 
 	return 0;

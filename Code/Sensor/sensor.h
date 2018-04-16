@@ -37,12 +37,15 @@ class sensor {
 		float getHum();
 		float getSnowPro();
 		float getReHum();
+		bool getPow();
 		int getIr();
+
 		void setTemp(float input);
                 void setHum(float input);
                 void setSnowPro(float input);
                 void setReHum(float input);
                 void setIr(int input);
+		void setPow(bool input);
 
 
 
