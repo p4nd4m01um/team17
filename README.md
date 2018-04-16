@@ -57,7 +57,7 @@ communication.  
 - can handle different types of solutions including salt water (brine) and oil at various temparatures
 
 <p align="center">
-  <img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/motor%20rtep.jpg" width="700px" height="200px" />
+  <img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/motor%20rtep.jpg" width="600px" height="500px" />
 </p>
 
 ## How to implement code  
