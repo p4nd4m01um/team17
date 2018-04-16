@@ -50,7 +50,7 @@ communication.  
 <img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/sensor-DHT22.png" width="700px" height="200px" />
 </p>
 
-**3. _Brushless DC Motor Pump Decdeal QR50E _**
+**3. _Brushless DC Motor Pump Decdeal QR50E_**
 - Low cost and Versatile
 - 12V 5W Rating
 - 280l/H pump quantity
