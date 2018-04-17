@@ -6,10 +6,7 @@ We selected Orcad capture and PCB editor to draw the PCB.
 #### sensors circuit:   
 The original file of the [schematic](https://github.com/p4nd4m01um/team17/blob/master/PCB/Sensor%20circuit.zip).  Please open this file by Orcad Capture.  
 The original file of the [PCB](https://github.com/p4nd4m01um/team17/blob/master/PCB/Circuit%20for%20sensors.brd). Please open this file by PCB Editor.   
-#### motor control circuit:  
-The original file of the [schematic](https://github.com/p4nd4m01um/team17/blob/master/PCB/Motor%20control%20circuit.zip).  Please open this file by Orcad Capture.  
-The original file of the [PCB](https://github.com/p4nd4m01um/team17/blob/master/PCB/Motot%20control.brd). Please open this file by PCB Editor. 
-
+  
 ### Here is the schematic of sensors circuit. 16 pins are enough for our project, so we only used a header with 16 Pins.   
 J2 is for PIR sensor  
 J3 is for humidity&temperature sensor   
@@ -30,7 +27,10 @@ D2 LED is for observation. It will show if the circuit is working.
   
 ---    
 ### Schematic and PCB for motor drive  
-  
+
+#### motor control circuit:  
+The original file of the [schematic](https://github.com/p4nd4m01um/team17/blob/master/PCB/Motor%20control%20circuit.zip).  Please open this file by Orcad Capture.  
+The original file of the [PCB](https://github.com/p4nd4m01um/team17/blob/master/PCB/Motot%20control.brd). Please open this file by PCB Editor.  
 ### Here is the Schematic of Motor driver circuit. 
 J1 is for Power source.  
 J2 is for Motor.  
