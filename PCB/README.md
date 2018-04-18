@@ -50,6 +50,11 @@ D2 LED is to check if the circuit works properly.
 ### This one is the bottom layer.  
 ![motor pcb bottom](https://user-images.githubusercontent.com/36344537/38472466-74adcb7e-3b78-11e8-8929-ffdb804320a3.PNG)  
   
+### The real view  
+<p align="center">
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/PCB%20for%20Motor.jpg" />
+</p>
+  
       
   #### PCB Artwork  
    PCB Artwork in the circuit designing process refers to the planning and placing of electrical traces and via holes to connect every component mounted on the board with each other.  
