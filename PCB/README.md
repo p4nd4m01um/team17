@@ -23,7 +23,12 @@ D2 LED is for observation. It will show if the circuit is working.
 ![sensor pcb top](https://user-images.githubusercontent.com/36344537/38472463-7473922e-3b78-11e8-8959-69dac39f5cdf.PNG)      
   
 ### Here is the bottom layer.  
-![sensor pcb](https://user-images.githubusercontent.com/36344537/38472464-748677f4-3b78-11e8-9f26-37ec2a2fd449.PNG)   
+![sensor pcb](https://user-images.githubusercontent.com/36344537/38472464-748677f4-3b78-11e8-9f26-37ec2a2fd449.PNG)    
+  
+### The real view  
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/PCB%20for%20sensors.jpg" width="400px" height="300px" />
+</p>
+
   
 ---    
 ### Schematic and PCB for motor drive  
@@ -51,7 +56,7 @@ D2 LED is to check if the circuit works properly.
 ![motor pcb bottom](https://user-images.githubusercontent.com/36344537/38472466-74adcb7e-3b78-11e8-8929-ffdb804320a3.PNG)  
   
 ### The real view  
-<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/PCB%20for%20Motor.jpg" width="200px" height="300px" />
+<img src="https://github.com/p4nd4m01um/team17/blob/master/ScreenShot/PCB%20for%20Motor.jpg" width="300px" height="400px" />
 </p>
   
       
