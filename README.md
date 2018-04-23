@@ -28,7 +28,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 - Lock time: 0.2 sec  
 - Trigger methods: L – disable repeat trigger, H enable repeat trigger  
 - Sensing range: less than 120 degree, within 7 meters  
-- Temperature: – 15 ~ +70  
+- Temperature: – 15°C ~ +70°C  
 - Dimension: 32*24 mm, distance between screw 28mm, M2, Lens dimension in diameter: 23mm
 
 <p align="center">
@@ -41,7 +41,7 @@ This project aims to prevent the formation of ice or snow by using brine as the 
 - 3 to 5V power and I/O  
 - 2.5mA max current use during conversion (while requesting data)  
 - Good for 0-100% humidity readings with 2-5% accuracy  
-- Good for -40 to 80°C temperature readings ±0.5°C accuracy  
+- Good for -40°C to 80°C temperature readings ±0.5°C accuracy  
 - No more than 0.5 Hz sampling rate (once every 2 seconds)  
 - Single-bus data is used for communication between MCU and DHT22, it costs 5ms for single time
 communication.  
